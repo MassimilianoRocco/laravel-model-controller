@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    @foreach ($movies as $movie)
-        <p>{{$movie->title}}</p>
-    @endforeach
+    <h1>Benvenuto</h1>
+
+    <a href="{{ route('titles') }}">Titles</a>
 @endsection

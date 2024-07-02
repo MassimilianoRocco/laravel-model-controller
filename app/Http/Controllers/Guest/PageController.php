@@ -8,7 +8,7 @@ use App\Models\Movie;
 
 class PageController extends Controller
 {
-    public function home() {
+    public function titles() {
 
         $movies = Movie::all();
         
@@ -16,6 +16,11 @@ class PageController extends Controller
             "movies" => $movies 
         ];
 
-        return view('home', $data);
+        return view('titles', $data);
+    }
+
+    public function home() {
+
+        return view('home');
     }
 }
